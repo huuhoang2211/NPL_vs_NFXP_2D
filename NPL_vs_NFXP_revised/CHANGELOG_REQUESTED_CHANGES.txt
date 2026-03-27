@@ -1,0 +1,10 @@
+Files revised per request:
+- npl2d.m
+- zurcher2d.m
+- run_mc_npl_nfxp_2d.m
+
+Main changes:
+1) NPL now precomputes Finv = inv(I - beta*Fu) once per outer iteration and passes it into the inner likelihood.
+2) NPL no longer recomputes zurcher2d.u(mp) redundantly inside ll -> phi -> lambda.
+3) Initial CCPs now use a direct 2D frequency extension of original case 4 (raw statewise frequencies, no smoothing).
+4) Empty 2D states are filled with the sample-wide keep rate so the initializer remains well-defined.
