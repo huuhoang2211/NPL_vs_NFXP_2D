@@ -25,8 +25,6 @@ How to run
 
 Notes
 -----
-- The experiment remains a two-step comparison: stage 1 estimates
-  transition probabilities, and stage 2 compares NPL and NFXP on the same
-  estimated transitions.
-- NPL timing still includes CCP-initialization time.
+- Both NPL and NFXP use the same estimated transitions as input.
+- NPL timing includes CCP-initialization time.
 - NFXP and NPL initialize the structural parameters at zeros.
