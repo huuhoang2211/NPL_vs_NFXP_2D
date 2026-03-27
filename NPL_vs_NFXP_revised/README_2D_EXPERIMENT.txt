@@ -29,4 +29,4 @@ Notes
   transition probabilities, and stage 2 compares NPL and NFXP on the same
   estimated transitions.
 - NPL timing still includes CCP-initialization time.
-- NFXP starts from zeros.
+- NFXP and NPL initialize the structural parameters at zeros.
